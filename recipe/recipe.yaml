@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: itkdb
-  version: "0.6.15"
-  python_min: 3.8
+  version: "0.6.16"
+  python_min: '3.8'
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/itkdb-${{ version }}.tar.gz
-  sha256: 4edfc211548e72499b12c3e6c4612a1d4ae4cbd13fafd22a136b2b638981cf28
+  sha256: b64614a704f9c00f892477cd561941842079043cc066b268628e154c7df75ab8
   patches:
     - patches/0001-drop-pylibmagic-dependency-for-pip-check.patch
 
